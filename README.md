@@ -17,11 +17,9 @@ Benvenuti nel portfolio di **KASK1**, un progetto React che mette in mostra comp
 
 ## Demo
 
-Visualizza il progetto live [qui](https://example.com).  
+Visualizza il progetto live [qui](https://portfolio-react-hxfd00sbw-alessandros-projects-4ebb388b.vercel.app/).  
 
-![Screenshot](./path/to/screenshot.png)
-
-## Funzionalità
+unzionalità
 
 - **Design moderno** e completamente responsivo
 - Sezioni principali:
