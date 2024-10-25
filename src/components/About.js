@@ -1,10 +1,10 @@
 import React from 'react';
-
+import about from '../assets/img/kask_profile.jpg';
 function About() {
   return (
     <section id="about" className="about h-screen text-white flex flex-col justify-center items-center relative overflow-hidden">
       <div className="relative z-10 flex flex-col items-center text-center">
-        <img src="kask_profile.jpg" alt="Alessandro Cascone" className="w-40 h-40 rounded-full mb-6 shadow-lg" />
+        <img src={about } alt="Alessandro Cascone" className="w-40 h-40 rounded-full mb-6 shadow-lg" />
         <h2 className="text-5xl mb-6 font-bold cursor-scale">About Me</h2>
         <p className="text-lg max-w-3xl text-gray-400 cursor-scale">
           I’m Alessandro, a passionate Web Developer and Educator, committed to transforming ideas into interactive and visually captivating digital experiences.

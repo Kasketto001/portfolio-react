@@ -1,3 +1,228 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Background unico per il body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Clash Display', sans-serif;
+    background: linear-gradient(to bottom, #000000, #121212 50%, #1a1a1a 100%);
+    overscroll-behavior: none;
+    color: white;
+}
+
+/* Cursore personalizzato */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #FBAB7E;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+.grow, .grow-small {
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+}
+
+.grow-small {
+    transform: scale(2);
+    background-color: #7fdbff;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+/* Mobile Menu (hidden by default on larger screens) */
+@media (min-width: 768px) {
+    #menu {
+        display: flex !important;
+    }
+}
+
+#menu.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 40;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+
+/* Bottone Download CV */
+.download-cv-btn {
+    background: linear-gradient(90deg, #38B2AC 0%, #4299E1 100%);
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-cv-btn:hover {
+    background: linear-gradient(90deg, #4299E1 0%, #38B2AC 100%);
+    transform: translateY(-3px);
+}
+
+/* Skill Bars */
+.skill-bar {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-container {
+    background-color: #2e2e2e;
+    height: 1rem;
+    border-radius: 10px;
+    position: relative;
+    width: 100%; /* Aggiungi un po' di margine per l'allineamento */
+}
+
+.bar {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1.5s ease;
+}
+
+/* Gradiente personalizzato per ogni barra */
+.html-bar { background: linear-gradient(90deg, #E44D26 0%, #F16529 100%); }
+.css-bar { background: linear-gradient(90deg, #264DE4 0%, #2965F1 100%); }
+.js-bar { background: linear-gradient(90deg, #F0DB4F 0%, #F7E018 100%); }
+.tailwind-bar { background: linear-gradient(90deg, #38B2AC 0%, #4FD1C5 100%); }
+.react-bar { background: linear-gradient(90deg, #61DAFB 0%, #21A1F1 100%); }
+.laravel-bar { background: linear-gradient(90deg, #FF2D20 0%, #FC7F4F 100%); }
+
+/* Posizionamento della percentuale */
+.skill-percent {
+    font-size: 0.9rem;
+    color: #fff;
+    display: inline-block;
+    min-width: 40px; /* Allineamento uniforme */
+    text-align: right; /* Per migliorare la visibilità */
+}
+
+.skill-bar:hover .skill-percent {
+    color: #FBAB7E;
+}
+
+/* Contact Me Button */
+.contact-button {
+    background: linear-gradient(90deg, #38B2AC 0%, #4299E1 100%);
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background: linear-gradient(90deg, #4299E1 0%, #38B2AC 100%);
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo {
+    margin-bottom: 1rem;
+}
+
+.footer .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #4A5568;
+    margin: 1.5rem 0;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer .social-links a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #FBAB7E;
+}
+
+.footer .footer-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer .footer-links a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #FBAB7E;
+}
+
+.footer p {
+    font-size: 0.875rem;
+    color: #888;
+}
+
+/* Responsive utilities for padding and margin */
+@media (max-width: 640px) {
+    .footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .text-lg { font-size: 1rem; }
+    .text-3xl { font-size: 2rem; }
+    .px-8 { padding-left: 1rem; padding-right: 1rem; }
+    .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+}
