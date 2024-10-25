@@ -1,5 +1,6 @@
 import React from 'react';
 import about from '../assets/img/kask_profile.jpg';
+import cv from '../assets/downloads/ALESSANDRO CASCONE CV.pdf';
 function About() {
   return (
     <section id="about" className="about h-screen text-white flex flex-col justify-center items-center relative overflow-hidden">
@@ -13,7 +14,7 @@ function About() {
           <a href="#skills" className="text-gray-400 border-b-2 border-transparent hover:border-gray-400 transition">My Skills</a>
           <a href="#contact" className="text-gray-400 border-b-2 border-transparent hover:border-gray-400 transition">Contact Me</a>
         </div>
-        <a href="your-cv.pdf" download className="download-cv-btn mt-8 inline-block px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-full hover:from-teal-400 hover:to-blue-500 transition-colors duration-300">
+        <a href={cv} download className="download-cv-btn mt-8 inline-block px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-full hover:from-teal-400 hover:to-blue-500 transition-colors duration-300">
           Download CV
         </a>
       </div>
