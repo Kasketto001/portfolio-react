@@ -1,0 +1,71 @@
+body {
+    font-family: 'Clash Display', sans-serif;
+    background: linear-gradient(to bottom, #000000, #121212 50%, #1a1a1a 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cursore personalizzato */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #FBAB7E;
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Bottone per il CV */
+.download-cv-btn {
+    background: linear-gradient(90deg, #38B2AC 0%, #4299E1 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-cv-btn:hover {
+    background: linear-gradient(90deg, #4299E1 0%, #38B2AC 100%);
+    transform: translateY(-3px);
+}
+
+/* Skill Bars */
+.skill-bar {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.bar-container {
+    background-color: #3b3b3b;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+.bar {
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease;
+}
+
+/* Gradienti specifici per ogni barra */
+.html-bar { background: linear-gradient(90deg, #E44D26 0%, #F16529 100%); }
+.css-bar { background: linear-gradient(90deg, #264DE4 0%, #2965F1 100%); }
+.bootstrap-bar { background: linear-gradient(90deg, #7952B3 0%, #563D7C 100%); }
+.tailwind-bar { background: linear-gradient(90deg, #38B2AC 0%, #4FD1C5 100%); }
+.js-bar { background: linear-gradient(90deg, #F0DB4F 0%, #F7E018 100%); }
+.react-bar { background: linear-gradient(90deg, #61DAFB 0%, #21A1F1 100%); }
+.vue-bar { background: linear-gradient(90deg, #42B883 0%, #35495E 100%); }
+.laravel-bar { background: linear-gradient(90deg, #FF2D20 0%, #FC7F4F 100%); }
+.apex-bar { background: linear-gradient(90deg, #008ACD 0%, #0070E0 100%); }

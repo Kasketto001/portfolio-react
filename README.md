@@ -1,70 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# KASK1 Portfolio
 
-## Available Scripts
+Benvenuti nel portfolio di **KASK1**, un progetto React che mette in mostra competenze, esperienza e progetti personali attraverso un design moderno e interattivo. Il sito include sezioni come presentazione, abilità, contatti e animazioni fluide per offrire un’esperienza utente coinvolgente.
 
-In the project directory, you can run:
+## Sommario
 
-### `npm start`
+- [Demo](#demo)
+- [Funzionalità](#funzionalità)
+- [Tecnologie Utilizzate](#tecnologie-utilizzate)
+- [Installazione](#installazione)
+- [Struttura del Progetto](#struttura-del-progetto)
+- [Contribuire](#contribuire)
+- [Licenza](#licenza)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Visualizza il progetto live [qui](https://example.com).  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot](./path/to/screenshot.png)
 
-### `npm run build`
+## Funzionalità
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Design moderno** e completamente responsivo
+- Sezioni principali:
+  - **Home**: introduzione visiva con video di sfondo e collegamento a LinkedIn
+  - **About Me**: informazioni personali con un pulsante per il download del curriculum
+  - **Skills**: abilità tecniche con progress bar animate per ogni linguaggio e tecnologia
+  - **Contact Me**: collegamento diretto tramite email a `info@kask1.it`
+- **Animazioni GSAP** per una UX interattiva
+- **Integrazione con Tailwind CSS** per uno styling veloce e responsivo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tecnologie Utilizzate
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React.js](https://reactjs.org/) - Libreria JavaScript per costruire l’interfaccia utente
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS per uno styling personalizzato e responsivo
+- [GSAP](https://greensock.com/gsap/) - Libreria di animazioni per transizioni fluide
+- [Font Awesome](https://fontawesome.com/) - Icone vettoriali per i social e le tecnologie
 
-### `npm run eject`
+## Installazione
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Per eseguire il progetto in locale, segui questi passaggi:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clona il repository**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/username/portfolio-react.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Accedi alla directory del progetto**:
 
-## Learn More
+   ```bash
+   cd portfolio-react
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Installa le dipendenze**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. **Avvia il server di sviluppo**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   L’app sarà accessibile su `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Struttura del Progetto
 
-### Making a Progressive Web App
+Il progetto è organizzato in componenti per una gestione modulare:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+src
+│
+├── App.js                # Componente principale dell'app
+├── index.js              # Punto di ingresso dell’app
+├── styles
+│   └── style.css         # File di stile globale
+└── components            # Componenti riutilizzabili
+    ├── Navbar.js         # Navbar con pulsante hamburger
+    ├── Hero.js           # Sezione iniziale con video di sfondo
+    ├── About.js          # Sezione descrittiva di presentazione
+    ├── Skills.js         # Sezione abilità tecniche con barre di progresso
+    ├── ContactMe.js      # Sezione di contatto con link email
+    └── Footer.js         # Footer con link ai social media
+```
 
-### Advanced Configuration
+## Contribuire
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributi, issue e suggerimenti sono benvenuti! Sentiti libero di fare una **pull request** o aprire un **issue**.
 
-### Deployment
+1. **Fai il fork** del progetto
+2. **Crea un branch** per la tua feature: `git checkout -b feature/nome-feature`
+3. **Fai il commit delle modifiche**: `git commit -m 'Descrizione della modifica'`
+4. **Push del branch**: `git push origin feature/nome-feature`
+5. **Apri una pull request**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Licenza
 
-### `npm run build` fails to minify
+Distribuito sotto la licenza MIT. Consulta il file `LICENSE` per maggiori dettagli.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+Questo `README.md` fornisce una panoramica chiara e organizzata del progetto, con tutte le informazioni necessarie per installarlo e contribuire.
