@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  // Animazioni di caricamento della pagina
+  gsap.fromTo('.navbar a', { opacity: 0, y: -50 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out", stagger: 0.2 });
+  gsap.fromTo('.hero img, .hero p, .hero a', { opacity: 0, scale: 0.9, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 1.5, ease: "power3.out", delay: 0.5 });
 
   return (
     <nav className="navbar fixed top-0 left-0 right-0 z-50 bg-black text-white">

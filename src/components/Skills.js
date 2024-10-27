@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import style from  '../styles/style.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,6 +114,21 @@ function Skills() {
             <div className="bar laravel-bar h-full rounded-full"></div>
           </div>
         </div>
+
+        {/* APEX SALESFORCE Skill Bar */}
+        <div className="skill-bar mb-4" data-skill="60">
+          <div className="flex items-center justify-between mb-2">
+            <label className="text-lg flex items-center space-x-2">
+              <i className="fab fa-salesforce text-sky-500"></i>
+              <span>Apex (Salesforce)</span>
+            </label>
+            <span className="skill-percent text-gray-400">60%</span>
+          </div>
+          <div className="bar-container bg-gray-800 rounded-full h-4 w-full">
+            <div className="bar apex-bar h-full rounded-full"></div>
+          </div>
+        </div>
+        
 
       </div>
     </section>
